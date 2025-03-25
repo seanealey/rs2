@@ -83,6 +83,13 @@ Then launch MoveIt with the simulation flag:
 
 ```bash
 ros2 launch ur_moveit_config ur_moveit.launch.py ur_type:=ur3e use_sim_time:=true
+
+
+
+
+ros2 launch ur_simulation_gz ur_sim_control.launch.py ur_type:=ur3e launch_rviz:=false
+ros2 launch ur_moveit_config ur_moveit.launch.py ur_type:=ur3e use_sim_time:=true
+ros2 run ur3e_cpp_demo ur3e_simple_control
 ```
 
 ## 5. Controlling the Robot
